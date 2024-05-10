@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto-Alura</title>
+    <link rel="stylesheet" href="styles.css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub&family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css/contacto.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <header>
+        <section class="contenedor">
+            <h1><img src="img/logo-blanco.png" alt="Logo-blanco"></h1>
+                <nav class="nav-principal">
+                    <a href="index.html">Inicio</a>
+                    <a href="productos.html">Productos</a>
+                    <a href="contacto.html">Contacto</a>
+                </nav>
+        </section>
+    </header> 
+<main>
+        <!-- seccion formulario contacto -->
+        <section class="titulo-formulario">
+            <h2>Ponte en Contacto con Nosotros</h2>
+        </section>
+    <form action="#" class="formulario">
+
+            <label class="datos" for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" autocomplete="on" placeholder="Tu nombre completo">
+
+            <label class="datos" for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="correo" autocomplete="on" placeholder="tu@aluratres.com">
+
+            <label class="datos" for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" autocomplete="on" placeholder="(xx)xx-xx-xx-xx">
+
+            <textarea class="datos" name="mensaje" id="mensaje" cols="30" rows="10">Dejanos tus comentarios...</textarea>
+        <!-- Botones radio -->
+        <fieldset>
+            <legend>¿Cómo prefieres ser contactado?</legend>
+
+                <label for="email-radio">E-mail</label>
+                <input type="radio" id="email-radio" name="radio" value="email">
+
+                <label for="telefono-radio">Teléfono</label>  
+                <input type="radio" id="telefono-radio" name="radio" value="telefono"> 
+
+                <label for="whatsapp-radio">WhatsApp</label>
+                <input type="radio" id="whatsapp-radio" name="radio" value="whatsapp">
+        </fieldset>
+        <fieldset>
+            <legend>¿En cuál horario prefiere ser atendido?</legend>
+                <select>
+                    <option>Seleccione una opcion</option>
+                    <option value="mañana">Mañana</option>
+                    <option value="tarde">Tarde</option>
+                    <option value="noche">Noche</option>
+                </select>
+        </fieldset>
+    </form>   
+    <label for="enviar">
+        <button type="submit" id="enviar">Enviar mensaje</button>
+    </label>
+</main>
+<!-- seccion de pie de pagina -->
+        <footer>
+            <p>&copy; copyright Jim_FeDev 2024.</p>
+        </footer>
+</html>
